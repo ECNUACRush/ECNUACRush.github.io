@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zhihu.com/people/pampaseagle-79/"/>
-  <updated>2021-07-11T03:27:03.280Z</updated>
+  <updated>2021-07-11T16:13:17.811Z</updated>
   <id>https://www.zhihu.com/people/pampaseagle-79/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Keras_1</title>
+    <link href="https://www.zhihu.com/people/pampaseagle-79/2021/07/11/keras-1/"/>
+    <id>https://www.zhihu.com/people/pampaseagle-79/2021/07/11/keras-1/</id>
+    <published>2021-07-11T15:35:53.000Z</published>
+    <updated>2021-07-11T16:13:17.811Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;keras官方文档：&lt;a href=&quot;https://keras.io/zh/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://keras.io/zh/&lt;/a&gt;&lt;/p&gt;
+&lt;img src=&quot;.\keras-1\keras.jpg&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://www.zhihu.com/people/pampaseagle-79/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="博客" scheme="https://www.zhihu.com/people/pampaseagle-79/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>Mit-Algorithm-notes</title>
