@@ -356,11 +356,11 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 
                 
                 
-                <a href="/categories/随笔/" title="随笔: 1">
+                <a href="/categories/随笔/" title="随笔: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             style="background-color: #F9EBEA;">随笔
-                        <span class="tag-length">1</span>
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -374,6 +374,54 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
     <article id="articles" class="container articles">
         <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/07/11/mit-algorithm-notes/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Mit-Algorithm-notes">
+                            
+                            <span class="card-title">Mit-Algorithm-notes</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                算法导论–读书笔记：
+website：https://open.163.com/newview/movie/free?pid=M6UTT5U0I&amp;mid=M6V2T1JGF
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-07-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/随笔/" class="post-category" target="_blank">
+                                    随笔
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/博客/" target="_blank">
+                            <span class="chip bg-color">博客</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -436,7 +484,7 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">149</span>
+            <span class="white-color">170</span>
             
 
             <br>
@@ -503,7 +551,7 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
     $(document).ready(function () {
 
         var int = setInterval(fixCount, 50);
-        var pvcountOffset = 80000;
+        var pvcountOffset = 1000;
         var uvcountOffset = 20000;
 
         function fixCount() {
@@ -542,7 +590,7 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
         minutes - 0-59之间的整数，做为date对象的分钟数
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2017, 09, 11, 00, 00, 00); //北京时间2018-2-13 00:00:00
+        var t1 = Date.UTC(2021, 07, 11, 11, 18, 00); //北京时间2018-2-13 00:00:00
         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
         var diff = t2 - t1;
         var diffYears = Math.floor(diff / years);
