@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zhihu.com/people/pampaseagle-79/"/>
-  <updated>2021-07-12T03:58:31.909Z</updated>
+  <updated>2021-07-12T08:02:44.552Z</updated>
   <id>https://www.zhihu.com/people/pampaseagle-79/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>competitions_list</title>
+    <link href="https://www.zhihu.com/people/pampaseagle-79/2021/07/12/competitions-list/"/>
+    <id>https://www.zhihu.com/people/pampaseagle-79/2021/07/12/competitions-list/</id>
+    <published>2021-07-12T07:53:26.000Z</published>
+    <updated>2021-07-12T08:02:44.552Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1.微信大数据挑战赛 &lt;a href=&quot;https://www.sohu.com/a/463930027_649858&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="比赛" scheme="https://www.zhihu.com/people/pampaseagle-79/categories/%E6%AF%94%E8%B5%9B/"/>
+    
+    
+      <category term="摘录" scheme="https://www.zhihu.com/people/pampaseagle-79/tags/%E6%91%98%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Keras_1</title>
     <link href="https://www.zhihu.com/people/pampaseagle-79/2021/07/11/keras-1/"/>
     <id>https://www.zhihu.com/people/pampaseagle-79/2021/07/11/keras-1/</id>
     <published>2021-07-11T15:35:53.000Z</published>
-    <updated>2021-07-12T03:58:31.909Z</updated>
+    <updated>2021-07-15T09:03:20.387Z</updated>
     
     <summary type="html">
     
@@ -30,7 +56,7 @@
         
         
           &lt;p&gt;keras官方文档：&lt;a href=&quot;https://keras.io/zh/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://keras.io/zh/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;keras-1/keras.jpg&quot;
+&lt;p&gt;&lt;img src=&quot;/medias/keras.jpg&quot;
         
       
     
