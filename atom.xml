@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zhihu.com/people/pampaseagle-79/"/>
-  <updated>2021-07-12T08:02:44.552Z</updated>
+  <updated>2021-07-17T15:57:48.986Z</updated>
   <id>https://www.zhihu.com/people/pampaseagle-79/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Qt_1</title>
+    <link href="https://www.zhihu.com/people/pampaseagle-79/2021/07/17/qt-1/"/>
+    <id>https://www.zhihu.com/people/pampaseagle-79/2021/07/17/qt-1/</id>
+    <published>2021-07-17T15:57:10.000Z</published>
+    <updated>2021-07-17T15:57:48.986Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;//
+        
+      
+    
+    </summary>
+    
+      <category term="实习" scheme="https://www.zhihu.com/people/pampaseagle-79/categories/%E5%AE%9E%E4%B9%A0/"/>
+    
+    
+      <category term="笔记" scheme="https://www.zhihu.com/people/pampaseagle-79/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>competitions_list</title>
