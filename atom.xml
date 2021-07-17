@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zhihu.com/people/pampaseagle-79/"/>
-  <updated>2021-07-17T15:57:48.986Z</updated>
+  <updated>2021-07-17T16:04:52.863Z</updated>
   <id>https://www.zhihu.com/people/pampaseagle-79/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zhihu.com/people/pampaseagle-79/2021/07/17/qt-1/"/>
     <id>https://www.zhihu.com/people/pampaseagle-79/2021/07/17/qt-1/</id>
     <published>2021-07-17T15:57:10.000Z</published>
-    <updated>2021-07-17T15:57:48.986Z</updated>
+    <updated>2021-07-17T16:04:52.863Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,8 @@
       
         
         
-          &lt;pre class=&quot;line-numbers language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;//
+          &lt;p&gt;实习要用到qt，从0开始学习一下，手写复现部分代码做保存。&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token comment&quot;
         
       
     
