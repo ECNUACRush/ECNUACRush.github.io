@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zhihu.com/people/pampaseagle-79/"/>
-  <updated>2021-07-17T16:04:52.863Z</updated>
+  <updated>2021-07-18T15:53:21.959Z</updated>
   <id>https://www.zhihu.com/people/pampaseagle-79/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Qt_2</title>
+    <link href="https://www.zhihu.com/people/pampaseagle-79/2021/07/18/qt-2/"/>
+    <id>https://www.zhihu.com/people/pampaseagle-79/2021/07/18/qt-2/</id>
+    <published>2021-07-18T15:48:10.000Z</published>
+    <updated>2021-07-18T15:53:21.959Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;实习要用到qt，从0开始学习一下，手写复现部分代码做保存。&lt;/p&gt;
+&lt;p&gt;Day2：各种基本控件，以及一些库函数。&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="实习" scheme="https://www.zhihu.com/people/pampaseagle-79/categories/%E5%AE%9E%E4%B9%A0/"/>
+    
+    
+      <category term="笔记" scheme="https://www.zhihu.com/people/pampaseagle-79/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>Qt_1</title>

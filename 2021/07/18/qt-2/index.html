@@ -4,14 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="开篇集, ECNU USTC CV DeepLearning MIRACLE 黄震 YAGAMI 计算机视觉 深度学习">
+    <meta name="keywords" content="Qt_2, ECNU USTC CV DeepLearning MIRACLE 黄震 YAGAMI 计算机视觉 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="
-When？什么时候开始写的？Now！你已经使我永生，这样做是你的欢乐。这脆薄的杯儿，你不断地把它倒空，又不断地以新生命来充满。
-这小小的苇笛，你携带着它逾山越谷，从笛管里吹出永新的音乐。
-在你双手的不朽的按抚下，我的小小的心，消融在无边快">
+    <meta name="description" content="实习要用到qt，从0开始学习一下，手写复现部分代码做保存。
+Day2：各种基本控件，以及一些库函数。
+// widget.ui -&gt; 
+# include &#34;mainwindow.h&#34;
+# include &amp;lt;QMenuBar&gt;
+# i">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +21,7 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>开篇集 | Hz的博客</title>
+    <title>Qt_2 | Hz的博客</title>
     <link rel="icon" type="image/jpeg" href="/medias/test.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -319,13 +321,13 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        开篇集
+                        Qt_2
                     </div>
                 </div>
             </div>
@@ -436,8 +438,8 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/博客/" target="_blank">
-                            <span class="chip bg-color">博客</span>
+                        <a href="/tags/笔记/" target="_blank">
+                            <span class="chip bg-color">笔记</span>
                         </a>
                         
                     </div>
@@ -448,8 +450,8 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/随笔/" class="post-category" target="_blank">
-                            随笔
+                        <a href="/categories/实习/" class="post-category" target="_blank">
+                            实习
                         </a>
                         
                     </div>
@@ -460,7 +462,7 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-10
+                    2021-07-18
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -474,7 +476,7 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    149
+                    380
                 </div>
                 
 
@@ -497,11 +499,83 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="/medias/test.jpg" alt></p>
-<h2 id="When？什么时候开始写的？Now！"><a href="#When？什么时候开始写的？Now！" class="headerlink" title="When？什么时候开始写的？Now！"></a>When？什么时候开始写的？Now！</h2><p>你已经使我永生，这样做是你的欢乐。这脆薄的杯儿，你不断地把它倒空，又不断地以新生命来充满。</p>
-<p>这小小的苇笛，你携带着它逾山越谷，从笛管里吹出永新的音乐。</p>
-<p>在你双手的不朽的按抚下，我的小小的心，消融在无边快乐之中，发出不可言说的词调。</p>
-<p>你的无穷的赐予只倾入我小小的手里。时代过去了，你还在倾注，而我的手里还有余量待充满。</p>
+                <p>实习要用到qt，从0开始学习一下，手写复现部分代码做保存。</p>
+<p>Day2：各种基本控件，以及一些库函数。</p>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token comment" spellcheck="true">// widget.ui -> </span>
+<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">"mainwindow.h"</span></span>
+<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QMenuBar></span></span>
+<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QToolBar></span></span>
+<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QDebug></span></span>
+<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QPushButton></span></span>
+<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QLabel></span></span>
+<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QDockWidget></span></span>
+<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QTextEdit></span></span>
+MainWindow<span class="token operator">::</span><span class="token function">MainWindow</span><span class="token punctuation">(</span>Qwidget <span class="token operator">*</span>parent<span class="token punctuation">)</span>
+    <span class="token operator">:</span>  <span class="token function">QMainWindow</span><span class="token punctuation">(</span>parent<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">resize</span><span class="token punctuation">(</span><span class="token number">600</span><span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 提前在ui中设计好了单选钮</span>
+
+        <span class="token comment" spellcheck="true">// 单选纽以及lamada函数的简单使用</span>
+        ui <span class="token operator">-</span><span class="token operator">></span> <span class="token function">setupUi</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 男默认选中</span>
+        ui <span class="token operator">-</span><span class="token operator">></span> rBtnMan<span class="token operator">-</span><span class="token operator">></span> <span class="token function">setChecked</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 选中女后打印信息，这里要先在ui中把相关按钮的名字改对应 </span>
+        <span class="token function">connect</span><span class="token punctuation">(</span>ui<span class="token operator">-</span><span class="token operator">></span>rBtnWoman<span class="token punctuation">,</span> <span class="token operator">&amp;</span>QRadioButton<span class="token operator">::</span>clicked<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token operator">=</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">qDebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"Now we choosed woman"</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 多选按钮 2选中 0未选中, 打印是否选中的状态</span>
+        <span class="token function">connect</span><span class="token punctuation">(</span>ui<span class="token operator">-</span><span class="token operator">></span>cBox<span class="token punctuation">,</span> <span class="token operator">&amp;</span>QCheckBox<span class="token operator">::</span>stateChanged<span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token operator">=</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token keyword">int</span> state<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">qDebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> state<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 列表</span>
+        QListWidgetItem <span class="token operator">*</span> item <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">QListWidgetItem</span><span class="token punctuation">(</span><span class="token string">"寂寞的季节"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 放入到listWidget 控件中</span>
+        ui<span class="token operator">-</span><span class="token operator">></span>listWidget<span class="token operator">-</span><span class="token operator">></span><span class="token function">addItem</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 设置居中</span>
+        item<span class="token operator">-</span><span class="token operator">></span><span class="token function">setTextAlignment</span><span class="token punctuation">(</span>Qt<span class="token operator">::</span>AlignCenter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 另一种方式制作</span>
+        QStringList list<span class="token punctuation">;</span>
+        list <span class="token operator">&lt;&lt;</span> <span class="token string">"寂寞的季节"</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"心是如何慢慢在凋谢"</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"多想向过去告别"</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"当季节不停更迭"</span><span class="token punctuation">;</span>
+        ui<span class="token operator">-</span><span class="token operator">></span>listWidget<span class="token operator">-</span><span class="token operator">></span><span class="token function">addItem</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// TreeWidget(树形)</span>
+        ui<span class="token operator">-</span><span class="token operator">></span>treeWidget<span class="token operator">-</span><span class="token operator">></span><span class="token function">setHeaderLabels</span><span class="token punctuation">(</span><span class="token function">QStringList</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"head"</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"head2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        QTreeWidgetItem <span class="token operator">*</span> Item1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">QTreeWidgetItem</span><span class="token punctuation">(</span><span class="token function">QStringList</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"item1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 顶层顶点</span>
+        ui <span class="token operator">-</span><span class="token operator">></span> treeWidget<span class="token operator">-</span><span class="token operator">></span> <span class="token function">addTopLevelItem</span><span class="token punctuation">(</span>liItem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 追加子节点</span>
+        QStringList heroL1<span class="token punctuation">;</span>
+        heroL1 <span class="token operator">&lt;&lt;</span> <span class="token string">"son node"</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"contends"</span><span class="token punctuation">;</span>
+        QTreeWidgetItem <span class="token operator">*</span> l1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">QTreeWidgetItem</span><span class="token punctuation">(</span>heroL1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Item1<span class="token operator">-</span><span class="token operator">></span><span class="token function">addChild</span><span class="token punctuation">(</span>l1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// TableWidget(表格)</span>
+        <span class="token comment" spellcheck="true">// QTableWidgit 具体的操作方法基本同上</span>
+        <span class="token comment" spellcheck="true">// function: </span>
+        ui<span class="token operator">-</span><span class="token operator">></span> tableWidget<span class="token operator">-</span><span class="token operator">></span> <span class="token function">setColumnCount</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 水平表头</span>
+        <span class="token function">setHorizontalHeaderLabels</span><span class="token punctuation">(</span><span class="token string">"QStringList()&lt;&lt;"</span><span class="token number">1</span><span class="token string">"&lt;&lt;"</span><span class="token number">2</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 行数</span>
+        <span class="token function">setRowCount</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 制表内容</span>
+        QStringList namelist<span class="token punctuation">,</span> sexList<span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 接着用以下形式的循环置元素即可</span>
+        <span class="token function">setItem</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> col<span class="token operator">++</span><span class="token punctuation">,</span> <span class="token function">newQTableWidgetItem</span><span class="token punctuation">(</span>namelist<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+
+MainWindow<span class="token operator">::</span><span class="token operator">~</span><span class="token function">MainWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -536,9 +610,9 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《开篇集》
+                    《Qt_2》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2021/07/10/kai-pian-ji/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2021/07/18/qt-2/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Hz
             </a> 采用
@@ -579,7 +653,7 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
         repo: 'ECNUACRush.github.io',
         owner: 'ECNUACRush',
         admin: "ECNUACRush",
-        id: '2021/07/10/kai-pian-ji/',
+        id: '2021/07/18/qt-2/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -600,48 +674,53 @@ When？什么时候开始写的？Now！你已经使我永生，这样做是你�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/07/11/mit-algorithm-notes/">
+                <a href="/2021/07/18/qt-2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Mit-Algorithm-notes">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Qt_2">
                         
-                        <span class="card-title">Mit-Algorithm-notes</span>
+                        <span class="card-title">Qt_2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            算法导论–读书笔记：
-website：https://open.163.com/newview/movie/free?pid=M6UTT5U0I&amp;mid=M6V2T1JGF
-
+                            实习要用到qt，从0开始学习一下，手写复现部分代码做保存。
+Day2：各种基本控件，以及一些库函数。
+// widget.ui -> 
+# include "mainwindow.h"
+# include &lt;QMenuBar>
+# i
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2021-07-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-07-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/随笔/" class="post-category" target="_blank">
-                                    随笔
+                            <a href="/categories/实习/" class="post-category" target="_blank">
+                                    实习
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/博客/" target="_blank">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/笔记/" target="_blank">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
@@ -652,49 +731,50 @@ website：https://open.163.com/newview/movie/free?pid=M6UTT5U0I&amp;mid=M6V2T1JG
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/10/kai-pian-ji/">
+                <a href="/2021/07/17/qt-1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="开篇集">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Qt_1">
                         
-                        <span class="card-title">开篇集</span>
+                        <span class="card-title">Qt_1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-When？什么时候开始写的？Now！你已经使我永生，这样做是你的欢乐。这脆薄的杯儿，你不断地把它倒空，又不断地以新生命来充满。
-这小小的苇笛，你携带着它逾山越谷，从笛管里吹出永新的音乐。
-在你双手的不朽的按抚下，我的小小的心，消融在无边快
+                            实习要用到qt，从0开始学习一下，手写复现部分代码做保存。
+// QT_MainWindow.cpp
+// 类似制作一个word菜单页面
+// 菜单栏最多只有一个
+# include "mainwindow.h"
+# include &lt
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-07-10
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-07-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/随笔/" class="post-category" target="_blank">
-                                    随笔
+                            <a href="/categories/实习/" class="post-category" target="_blank">
+                                    实习
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/博客/" target="_blank">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/笔记/" target="_blank">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
