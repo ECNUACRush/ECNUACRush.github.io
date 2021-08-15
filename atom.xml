@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zhihu.com/people/pampaseagle-79/"/>
-  <updated>2021-08-07T16:30:39.167Z</updated>
+  <updated>2021-08-15T05:16:19.781Z</updated>
   <id>https://www.zhihu.com/people/pampaseagle-79/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>keras_2_CNN</title>
+    <link href="https://www.zhihu.com/people/pampaseagle-79/2021/08/15/keras-2-cnn/"/>
+    <id>https://www.zhihu.com/people/pampaseagle-79/2021/08/15/keras-2-cnn/</id>
+    <published>2021-08-15T02:43:34.000Z</published>
+    <updated>2021-08-15T05:16:19.781Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/medias/structure.png&quot; alt=&quot;Keras&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本来是不打算继续完成《&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Keras" scheme="https://www.zhihu.com/people/pampaseagle-79/categories/Keras/"/>
+    
+    
+      <category term="AI" scheme="https://www.zhihu.com/people/pampaseagle-79/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>math_questions</title>
