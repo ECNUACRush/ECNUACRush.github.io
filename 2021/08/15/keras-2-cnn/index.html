@@ -497,28 +497,28 @@ Keras基本过程创建Se">
             <div id="articleContent">
                 <p>本来是不打算继续完成《<a href="https://www.icourse163.org/course/ZUCC-1206146808?tid=1463541462" target="_blank" rel="noopener"> 深度学习应用开发-TensorFlow实践 </a>》这门课的，然，考虑到两点，1：行百里者半九十，不要半途而废。 2：最后几章与未来研究方向有关，可作引入，扩充内容也正是热点所在，有学习之必要。</p>
 <h1 id="Keras基本过程"><a href="#Keras基本过程" class="headerlink" title="Keras基本过程"></a>Keras基本过程</h1><p>创建Sequential模型<br>根据需要 通过add（）建立神经层<br>编译模型 通过compile（）<br>训练模型 fit（）<br>评估模型 evaluate（）<br>应用 predict（）</p>
-<h3 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h3><p>使用cifar数据集进行图片识别，使用了CNN模型，与之前的全连接神经网络有一定的区别：</p>
+<h3 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h3><p>使用<strong>cifar数据集</strong>进行图片识别，使用了CNN模型，与之前的全连接神经网络有一定的区别：</p>
 <p>CNN（convolutional neural network）卷积神经网络。</p>
-<p>首先，全连接神经网络的弊端主要在于：参数过多、容易过拟合。</p>
+<p>首先，全连接神经网络的弊端主要在于：<strong>参数过多</strong>、容易过拟合。</p>
 <p>CNN正是被提出解决这样的问题、优化网络结构的。</p>
-<p>图像分类方面，ILSVRC’中，AlexNet-&gt;VGG-&gt;GoogleNet-&gt;ResNet，其中15年的ResNet（高达152层）已经超过了人的分类水准。</p>
-<p>在物体检测方面，同样。AlexNet和VGG（RCNN）能达到66%的准确率，ResNet（faster Rcnn）可以达到86%的准确率。</p>
+<p><strong>图像分类</strong>方面，ILSVRC’中，AlexNet-&gt;VGG-&gt;GoogleNet-&gt;ResNet，其中15年的ResNet（高达152层）已经超过了人的分类水准。</p>
+<p>在<strong>物体检测</strong>方面，同样。AlexNet和VGG（RCNN）能达到66%的准确率，ResNet（faster Rcnn）可以达到86%的准确率。</p>
 <h3 id="基本结构："><a href="#基本结构：" class="headerlink" title="基本结构："></a>基本结构：</h3><p><strong>卷积层+降采样层（若干组）+全连接（成一个向量）+传统分类器-&gt;得到结果</strong></p>
-<p><img src="/medias/cnn.png" alt="math_1"></p>
+<p><img src="/medias/cnn.png" alt="CNN"></p>
 <p>输入层：每个像素作为一个特征节点输入到网络中</p>
 <p>卷积层：使原信号增强并降低噪音</p>
 <p>降采样层：防止过拟合、减少参数</p>
 <p>全连接层：生成特征进行加权</p>
 <h4 id="卷积"><a href="#卷积" class="headerlink" title="卷积"></a>卷积</h4><p>类似于矩阵的点乘（原图像像素矩阵·卷积核），如果不用0填充，卷积后的结果（特征图）会裁边（5✖5-&gt;3✖3）</p>
 <p>主要作用是<strong>特征提取</strong>，使用不同的卷积核可以提取图像不同角度的特征。要添加不同的卷积核，即<strong>多通道卷积</strong>。然后对特征图相同位置的值进行<strong>累加</strong>，添加<strong>偏置项</strong>生成最终的特征图。</p>
-<p><img src="/medias/convolution.png" alt="math_1"></p>
+<p><img src="/medias/convolution.png" alt="Convolution"></p>
 <p>有两个特性：</p>
 <h5 id="局部连接："><a href="#局部连接：" class="headerlink" title="局部连接："></a>局部连接：</h5><p>特征图的每个输出特性不用查看所有输入特性，只用查看部分输入特征。</p>
 <h5 id="权值共享："><a href="#权值共享：" class="headerlink" title="权值共享："></a>权值共享：</h5><p>卷积核在滑动过程中，不发生变化。</p>
 <h5 id="步长（stride）："><a href="#步长（stride）：" class="headerlink" title="步长（stride）："></a>步长（stride）：</h5><p>也是一个有用的概念，同样的图像矩阵、卷积核，不同的步长会生成不同的特征图。有计算公式此处略。步长大于1的卷积也是一种降维。</p>
 <h4 id="池化（pooling）"><a href="#池化（pooling）" class="headerlink" title="池化（pooling）"></a>池化（pooling）</h4><p>卷积层之后添加的降采样层，减少矩阵长、宽从而达到<strong>减少参数</strong>、<strong>避免过拟合</strong>的目的。它是降低特定信号的采样率的过程。</p>
 <h5 id="最大池化、平均池化"><a href="#最大池化、平均池化" class="headerlink" title="最大池化、平均池化"></a>最大池化、平均池化</h5><p>本质都是一种聚合操作，为了合并相似特征达到降维的效果。只是采用的方法不同（max or mean）。</p>
-<p><img src="/medias/pooling.png" alt="math_1"></p>
+<p><img src="/medias/pooling.png" alt="Pooling"></p>
 <h2 id="Code："><a href="#Code：" class="headerlink" title="Code："></a>Code：</h2><!--基于tensorflow2.0/keras-->
 
 <h3 id="首先引用各种包和环境："><a href="#首先引用各种包和环境：" class="headerlink" title="首先引用各种包和环境："></a>首先引用各种包和环境：</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token operator">%</span>matplotlib notebook
