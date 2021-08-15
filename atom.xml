@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zhihu.com/people/pampaseagle-79/"/>
-  <updated>2021-08-15T15:24:43.230Z</updated>
+  <updated>2021-08-15T15:26:53.637Z</updated>
   <id>https://www.zhihu.com/people/pampaseagle-79/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zhihu.com/people/pampaseagle-79/2021/08/15/pat-1024/"/>
     <id>https://www.zhihu.com/people/pampaseagle-79/2021/08/15/pat-1024/</id>
     <published>2021-08-15T14:42:12.000Z</published>
-    <updated>2021-08-15T15:24:43.230Z</updated>
+    <updated>2021-08-15T15:26:53.637Z</updated>
     
     <summary type="html">
     
@@ -35,10 +35,10 @@
     
     </summary>
     
-      <category term="PAT" scheme="https://www.zhihu.com/people/pampaseagle-79/categories/PAT/"/>
+      <category term="String" scheme="https://www.zhihu.com/people/pampaseagle-79/categories/String/"/>
     
     
-      <category term="String" scheme="https://www.zhihu.com/people/pampaseagle-79/tags/String/"/>
+      <category term="PAT" scheme="https://www.zhihu.com/people/pampaseagle-79/tags/PAT/"/>
     
   </entry>
   
