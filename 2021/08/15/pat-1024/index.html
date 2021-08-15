@@ -513,7 +513,7 @@ input: 69">
 <blockquote>
 <p>Each input file contains one test case. Each case consists of two positive numbers N and K, where N (≤10^10) is the initial numer and K (≤100) is the maximum number of steps. The numbers are separated by a space.</p>
 </blockquote>
-<p>其实还是较为清晰的。10^10的N，最坏情况下显然最终的结果到了（10^10） <em> （2^100），起初对该规模判断错误，我以为会是10^10 </em> 100 = 10^12。</p>
+<p>其实还是较为清晰的。10^10的N，最坏情况下显然最终的结果到了（10^10） ×（2^100），起初对该规模判断错误，我以为会是10^10 × 100 = 10^12。</p>
 <h4 id="AC代码："><a href="#AC代码：" class="headerlink" title="AC代码："></a>AC代码：</h4><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h></span></span>
 <span class="token macro property">#<span class="token directive keyword">define</span> LL long long</span>
 
