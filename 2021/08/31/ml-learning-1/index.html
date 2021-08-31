@@ -4,16 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Qt_2, ECNU USTC CV DeepLearning MIRACLE 黄震 YAGAMI 计算机视觉 深度学习">
+    <meta name="keywords" content="ML_Learning_1, ECNU USTC CV DeepLearning MIRACLE 黄震 YAGAMI 计算机视觉 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="实习要用到qt，从0开始学习一下，手写复现部分代码做保存。
-Day2：各种基本控件，以及一些库函数。
-// widget.ui -&gt; 
-# include &#34;mainwindow.h&#34;
-# include &amp;lt;QMenuBar&gt;
-# i">
+    <meta name="description" content="Something李航老师《统计学习方法》算是一本知识普及类的技术书籍、首版于10年前意味着其是具有很强前瞻性的，彼时深度学习尚未兴起，如今的各种网络都尚未提出。在这样的情况下，李航老师的书能和西瓜书一样深受追捧，想来必然是有原因的，读来更">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +16,7 @@ Day2：各种基本控件，以及一些库函数。
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Qt_2 | Hz的博客</title>
+    <title>ML_Learning_1 | Hz的博客</title>
     <link rel="icon" type="image/jpeg" href="/medias/test.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -321,13 +316,13 @@ Day2：各种基本控件，以及一些库函数。
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Qt_2
+                        ML_Learning_1
                     </div>
                 </div>
             </div>
@@ -438,8 +433,8 @@ Day2：各种基本控件，以及一些库函数。
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/笔记/" target="_blank">
-                            <span class="chip bg-color">笔记</span>
+                        <a href="/tags/AI/" target="_blank">
+                            <span class="chip bg-color">AI</span>
                         </a>
                         
                     </div>
@@ -450,8 +445,8 @@ Day2：各种基本控件，以及一些库函数。
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/实习/" class="post-category" target="_blank">
-                            实习
+                        <a href="/categories/ML/" class="post-category" target="_blank">
+                            ML
                         </a>
                         
                     </div>
@@ -462,7 +457,7 @@ Day2：各种基本控件，以及一些库函数。
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-18
+                    2021-08-31
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -476,14 +471,14 @@ Day2：各种基本控件，以及一些库函数。
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    380
+                    2.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    9 分
                 </div>
                 
                 
@@ -499,83 +494,127 @@ Day2：各种基本控件，以及一些库函数。
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>实习要用到qt，从0开始学习一下，手写复现部分代码做保存。</p>
-<p>Day2：各种基本控件，以及一些库函数。</p>
-<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token comment" spellcheck="true">// widget.ui -> </span>
-<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">"mainwindow.h"</span></span>
-<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QMenuBar></span></span>
-<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QToolBar></span></span>
-<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QDebug></span></span>
-<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QPushButton></span></span>
-<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QLabel></span></span>
-<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QDockWidget></span></span>
-<span class="token macro property"># <span class="token directive keyword">include</span> <span class="token string">&lt;QTextEdit></span></span>
-MainWindow<span class="token operator">::</span><span class="token function">MainWindow</span><span class="token punctuation">(</span>Qwidget <span class="token operator">*</span>parent<span class="token punctuation">)</span>
-    <span class="token operator">:</span>  <span class="token function">QMainWindow</span><span class="token punctuation">(</span>parent<span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token function">resize</span><span class="token punctuation">(</span><span class="token number">600</span><span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 提前在ui中设计好了单选钮</span>
-
-        <span class="token comment" spellcheck="true">// 单选纽以及lamada函数的简单使用</span>
-        ui <span class="token operator">-</span><span class="token operator">></span> <span class="token function">setupUi</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 男默认选中</span>
-        ui <span class="token operator">-</span><span class="token operator">></span> rBtnMan<span class="token operator">-</span><span class="token operator">></span> <span class="token function">setChecked</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 选中女后打印信息，这里要先在ui中把相关按钮的名字改对应 </span>
-        <span class="token function">connect</span><span class="token punctuation">(</span>ui<span class="token operator">-</span><span class="token operator">></span>rBtnWoman<span class="token punctuation">,</span> <span class="token operator">&amp;</span>QRadioButton<span class="token operator">::</span>clicked<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token operator">=</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token function">qDebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"Now we choosed woman"</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token comment" spellcheck="true">// 多选按钮 2选中 0未选中, 打印是否选中的状态</span>
-        <span class="token function">connect</span><span class="token punctuation">(</span>ui<span class="token operator">-</span><span class="token operator">></span>cBox<span class="token punctuation">,</span> <span class="token operator">&amp;</span>QCheckBox<span class="token operator">::</span>stateChanged<span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token operator">=</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token keyword">int</span> state<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token function">qDebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> state<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-        <span class="token comment" spellcheck="true">// 列表</span>
-        QListWidgetItem <span class="token operator">*</span> item <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">QListWidgetItem</span><span class="token punctuation">(</span><span class="token string">"寂寞的季节"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 放入到listWidget 控件中</span>
-        ui<span class="token operator">-</span><span class="token operator">></span>listWidget<span class="token operator">-</span><span class="token operator">></span><span class="token function">addItem</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 设置居中</span>
-        item<span class="token operator">-</span><span class="token operator">></span><span class="token function">setTextAlignment</span><span class="token punctuation">(</span>Qt<span class="token operator">::</span>AlignCenter<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token comment" spellcheck="true">// 另一种方式制作</span>
-        QStringList list<span class="token punctuation">;</span>
-        list <span class="token operator">&lt;&lt;</span> <span class="token string">"寂寞的季节"</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"心是如何慢慢在凋谢"</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"多想向过去告别"</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"当季节不停更迭"</span><span class="token punctuation">;</span>
-        ui<span class="token operator">-</span><span class="token operator">></span>listWidget<span class="token operator">-</span><span class="token operator">></span><span class="token function">addItem</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token comment" spellcheck="true">// TreeWidget(树形)</span>
-        ui<span class="token operator">-</span><span class="token operator">></span>treeWidget<span class="token operator">-</span><span class="token operator">></span><span class="token function">setHeaderLabels</span><span class="token punctuation">(</span><span class="token function">QStringList</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"head"</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"head2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        QTreeWidgetItem <span class="token operator">*</span> Item1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">QTreeWidgetItem</span><span class="token punctuation">(</span><span class="token function">QStringList</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"item1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token comment" spellcheck="true">// 顶层顶点</span>
-        ui <span class="token operator">-</span><span class="token operator">></span> treeWidget<span class="token operator">-</span><span class="token operator">></span> <span class="token function">addTopLevelItem</span><span class="token punctuation">(</span>liItem<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token comment" spellcheck="true">// 追加子节点</span>
-        QStringList heroL1<span class="token punctuation">;</span>
-        heroL1 <span class="token operator">&lt;&lt;</span> <span class="token string">"son node"</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"contends"</span><span class="token punctuation">;</span>
-        QTreeWidgetItem <span class="token operator">*</span> l1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">QTreeWidgetItem</span><span class="token punctuation">(</span>heroL1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        Item1<span class="token operator">-</span><span class="token operator">></span><span class="token function">addChild</span><span class="token punctuation">(</span>l1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token comment" spellcheck="true">// TableWidget(表格)</span>
-        <span class="token comment" spellcheck="true">// QTableWidgit 具体的操作方法基本同上</span>
-        <span class="token comment" spellcheck="true">// function: </span>
-        ui<span class="token operator">-</span><span class="token operator">></span> tableWidget<span class="token operator">-</span><span class="token operator">></span> <span class="token function">setColumnCount</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token comment" spellcheck="true">// 水平表头</span>
-        <span class="token function">setHorizontalHeaderLabels</span><span class="token punctuation">(</span><span class="token string">"QStringList()&lt;&lt;"</span><span class="token number">1</span><span class="token string">"&lt;&lt;"</span><span class="token number">2</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 行数</span>
-        <span class="token function">setRowCount</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 制表内容</span>
-        QStringList namelist<span class="token punctuation">,</span> sexList<span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 接着用以下形式的循环置元素即可</span>
-        <span class="token function">setItem</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> col<span class="token operator">++</span><span class="token punctuation">,</span> <span class="token function">newQTableWidgetItem</span><span class="token punctuation">(</span>namelist<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token punctuation">}</span>
-
-MainWindow<span class="token operator">::</span><span class="token operator">~</span><span class="token function">MainWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h2 id="Something"><a href="#Something" class="headerlink" title="Something"></a>Something</h2><p>李航老师《统计学习方法》算是一本知识普及类的技术书籍、首版于10年前意味着其是具有很强前瞻性的，彼时深度学习尚未兴起，如今的各种网络都尚未提出。在这样的情况下，李航老师的书能和西瓜书一样深受追捧，想来必然是有原因的，读来更觉如此。</p>
+<h3 id="Chap1-统计学习方法概论"><a href="#Chap1-统计学习方法概论" class="headerlink" title="Chap1  统计学习方法概论"></a>Chap1  统计学习方法概论</h3><p>本章知识内容不难，算是一个引子，介绍了统计学习、监督学习、统计学习要素、模型评估与选择、泛化能力以及各种常见的统计学习问题（分类、标注、回归）等等。</p>
+<p>那么这章就对其中我认为比较重要的点进行摘录、注解。</p>
+<h4 id="统计学习"><a href="#统计学习" class="headerlink" title="统计学习"></a>统计学习</h4><p><em>关于统计机器学习，我个人很喜欢的一句话是<strong>“从数据中来，到数据中去”</strong></em></p>
+<p>Statistical Learning，是关于计算机<strong>基于数据</strong>构建<strong>概率统计模型</strong>并<strong>运用模型</strong>对实际数据进行预测和分析。</p>
+<blockquote>
+<p>关于学习，Herbert A.Simon给出过这样的定义：</p>
+<p>“如果一个系统能通过执行某个过程改进它的性能，这就是学习”。</p>
+</blockquote>
+<p>言简意赅。ML和DL的实质也正是如此，后续设计的诸多网络都正是在做这样一件事情。</p>
+<h5 id="组成-步骤"><a href="#组成-步骤" class="headerlink" title="组成/步骤"></a>组成/步骤</h5><p>统计学习由监督学习、非监督学习、半监督学习、强化学习等等组成。本书主要focus在监督学习（即有标注）。</p>
+<p>其三要素分别是：<strong>模型(Model）</strong>，<strong>策略(Strategy)</strong>，<strong>算法(Algorithm)</strong>。</p>
+<p>大致的步骤如下：</p>
+<ol>
+<li><p>得到一个有限训练数据集合。</p>
+</li>
+<li><p>确定包含所有可能的模型的假设空间，（学习模型的集合）。</p>
+</li>
+<li><p>确定模型选择策略，即学习策略。</p>
+</li>
+<li><p>实现求解最佳模型算法，即学习算法。</p>
+</li>
+<li><p>用学习算法选择最佳模型。</p>
+</li>
+<li><p>利用学习的最佳模型对新数据进行预测或分析。</p>
+</li>
+</ol>
+<h4 id="监督学习"><a href="#监督学习" class="headerlink" title="监督学习"></a>监督学习</h4><p>学习一个模型，该模型可以对所有给定的输入，对其输出进行一个较好的预测。可以说，这是统计学习中内容最丰富、应用最广泛的分支，也是最Original的分支。</p>
+<h5 id="表示问题："><a href="#表示问题：" class="headerlink" title="表示问题："></a>表示问题：</h5><p>对于特征向量的写法是值得注意的，除了特殊的模拟X多项式等任务，这里的输入实例x的<strong>特征向量的指数</strong>往往指的是<strong>第i个特征</strong>。<strong>下标i</strong>指的则是<strong>第i个样本数据</strong>。</p>
+<p><img src="/medias/ML_1_Data.png" alt="Data_expression"></p>
+<h5 id="经验风险-期望风险："><a href="#经验风险-期望风险：" class="headerlink" title="经验风险/期望风险："></a>经验风险/期望风险：</h5><p><strong>经验风险</strong>是指在训练数据集上的平均损失，期望风险是指模型关于联合分布的期望损失，具体的公式这里不表。但由于我们<strong>很难知道实际模型的联合分布</strong>，只能通过<strong>大数定律</strong>，使用足够大的训练样本来使二者近似。</p>
+<p>这样看理论上没有问题，实际上存在一个问题：数据量往往并不够。这就要对经验风险作一定的矫正。牵涉到监督学习的两个基本策略：<strong>经验风险最小化</strong>、<strong>结构风险最小化</strong>。</p>
+<h5 id="经验风险-结构风险最小化"><a href="#经验风险-结构风险最小化" class="headerlink" title="经验风险/结构风险最小化"></a>经验风险/结构风险最小化</h5><p><strong>经验风险最小化(ERM)</strong>即求解问题：</p>
+<p><img src="/medias/ML_1_ERM.png" alt="Data_expression"></p>
+<p>特例：当模型是条件概率分布，损失函数取对数损失函数，此时ERM就是求解极大似然估计。</p>
+<p><strong>存在问题</strong>：样本容量非常小时可能存在过拟合（over-fitting)。</p>
+<p><strong>结构风险最小化(SRM)</strong>其思想有所变化，引入了一个正则化项/罚项。贝叶斯估计中的<strong>最大后验概率估计（MAP）</strong>就是特例，同样，当模型是条件概率分布，</p>
+<p>损失函数取对数，模型复杂度由模型先验概率表示，SRM就等价于MAP。</p>
+<p>求解问题形式为：</p>
+<p><img src="/medias/ML_1_SRM.png" alt="Data_expression"></p>
+<h5 id="泛化能力-generalization-ability"><a href="#泛化能力-generalization-ability" class="headerlink" title="泛化能力(generalization ability)"></a>泛化能力(generalization ability)</h5><p>指的是模型对未知数据的预测能力。</p>
+<h5 id="过拟合-over-fitting"><a href="#过拟合-over-fitting" class="headerlink" title="过拟合(over-fitting)"></a>过拟合(over-fitting)</h5><p>Sometimes,我们过分focus在提高对<strong>训练数据的预测能力</strong>，比如无意义增多参数个数，使得模型变得非常复杂，往往会使得模型在验证集、测试集的效果差强人意。其实很好理解：如果我选一个模型简单的对训练集进行输出，而训练集中未出现的则随机预测。那么这样的情况下对训练集可以做到100%正确率，但验证集、测试集则显然不会有效果。</p>
+<p>要知道，我们真正的目的还是使得<strong>测试误差最小</strong>。</p>
+<p><img src="/medias/ML_1_ERROR.png" alt="Data_expression"></p>
+<h5 id="模型选择"><a href="#模型选择" class="headerlink" title="模型选择"></a>模型选择</h5><p>主要介绍了正则化、交叉验证的方法。</p>
+<p><strong>正则化</strong>是SRM思想中，引入的<strong>罚项</strong>，一般来说，模型越复杂，罚项值越大。</p>
+<p>其可以取L1范数或L2范数等。正则化的作用是选择<strong>经验风险</strong>和<strong>模型复杂度</strong>同时较小的模型。</p>
+<p>符合<strong>奥卡姆剃刀原则 Simple is best</strong>。</p>
+<p><strong>交叉验证</strong></p>
+<p>解决实际数据量不够多问题。</p>
+<p>通常有三种交叉验证的方法：</p>
+<ol>
+<li><p>简单交叉验证：首先分数据为两部分，<strong>改变参数</strong>进行多次测试，取<strong>测试误差</strong>最小的模型。</p>
+</li>
+<li><p><strong>S折交叉验证</strong>：使用最广泛，分数据集为S个<strong>互不交叉</strong>的子集，使用S-1个数据训练模型，余下的测试模型，这一过程<strong>反复进行S次</strong>（每次测试的数据集更换），一个轮次后取平均测试误差最小的模型。</p>
+</li>
+<li><p>留一交叉验证：S折交叉验证当S=N的特殊情况，说明<strong>只有一个测试数据</strong>，适用在数据极度匮乏的情况下。</p>
+</li>
+</ol>
+<h5 id="泛化能力"><a href="#泛化能力" class="headerlink" title="泛化能力"></a>泛化能力</h5><p>只用二分类问题讨论了一个上界，证明要用hoeffding不等式，大概看了一下基本思路没有问题，此处略。</p>
+<p><img src="/medias/ML_1_Generalization.png" alt="Data_expression"></p>
+<p><strong>训练误差小的模型， 泛化误差也会小</strong>。</p>
+<h5 id="生成模型"><a href="#生成模型" class="headerlink" title="生成模型"></a>生成模型</h5><p>用生成方法学到的模型，由数据学习联合概率分布P(X,Y)，然后求出条件概率分布P(Y|X)。</p>
+<p>常用方法：朴素贝叶斯，隐马尔可夫模型。</p>
+<p>特点：可以还原出联合概率分布，收敛速度更快，模型可以更快收敛于真实模型，可以针对隐变量。</p>
+<h5 id="判别模型"><a href="#判别模型" class="headerlink" title="判别模型"></a>判别模型</h5><p>由数据直接学习决策函数f(X)或P(Y|X)。</p>
+<p>常用方法：KNN，感知机，决策树，逻辑回归，最大熵，SVM，提升方法，条件随机场等等。</p>
+<p>特点：直接面对预测，往往准确率更高，对数据进行各种程度上抽象、定义并使用特征，从而简化学习问题。</p>
+<h4 id="分类、标注、回归"><a href="#分类、标注、回归" class="headerlink" title="分类、标注、回归"></a>分类、标注、回归</h4><p>三个经典任务都非常易于理解。</p>
+<p>当输出取有限个离散值时，问题-&gt;<strong>分类问题</strong>。</p>
+<p>复杂化分类问题，输出类别变为输出标记序列-&gt;<strong>标注问题</strong></p>
+<p>输入变量和输出变量，反应因变关系，往往都是连续值-&gt;<strong>回归问题</strong></p>
+<h4 id="性能评估指标"><a href="#性能评估指标" class="headerlink" title="性能评估指标"></a>性能评估指标</h4><p>可以说这里还是有相当重要性的，于是单列一节来记录。</p>
+<h5 id="混淆矩阵"><a href="#混淆矩阵" class="headerlink" title="混淆矩阵"></a>混淆矩阵</h5><ul>
+<li><p>TP（True Positive）<strong>正确预测正类</strong>（正-&gt;正）</p>
+</li>
+<li><p>TN（True Negative）<strong>正确预测负类</strong> （负-&gt;负)</p>
+</li>
+<li><p>FP（False Positive） <strong>错误预测负类（负-&gt;正）</strong>, 误报。</p>
+</li>
+<li><p>FN（False Negative）<strong>错误预测正类（正-&gt;负）</strong>，漏报。</p>
+<p>这里记忆：第一个T/F代表正确/错误预测，第二个P/N代表是我实际预测的结果。</p>
+<p>以FP为例，错误预测+预测成了正类，代表原来是负类，即负类-&gt;正类。</p>
+</li>
+</ul>
+<h5 id="准确率-Accuracy-："><a href="#准确率-Accuracy-：" class="headerlink" title="准确率(Accuracy)："></a>准确率(Accuracy)：</h5><p>最好理解，显然是<br>$$<br>P = (TP + TN)/ (TP + TN + FP + FN)<br>$$</p>
+<h5 id="精确率-Precision"><a href="#精确率-Precision" class="headerlink" title="精确率(Precision):"></a>精确率(Precision):</h5><p>只针对预测为正的样本（TP, FP）</p>
+<p>所以：<br>$$<br>P = TP / (TP+FP)<br>$$<br><strong>召回率(Recall)</strong>:</p>
+<p>只针对实际为正的样本(TP, FN)。<br>$$<br>R = TP / (TP + FN)<br>$$<br>其实根据ROC，Recall其实就是代表将正例分对的比例。</p>
+<h5 id="F1-Value"><a href="#F1-Value" class="headerlink" title="F1_Value:"></a>F1_Value:</h5><p>为二者的调和均值。</p>
+<p><img src="/medias/ML_1_F1.png" alt="Data_expression"></p>
+<h4 id="ROC曲线："><a href="#ROC曲线：" class="headerlink" title="ROC曲线："></a>ROC曲线：</h4><blockquote>
+<p>In signal detection theory, a receiver operating characteristic (ROC),  or simply ROC curve, is a graphical plot which illustrates the  performance of a binary classifier system <strong>as its discrimination threshold is varied</strong>.</p>
+<p>–wiki</p>
+</blockquote>
+<p>评价分类器好坏。只关注两个指标。</p>
+<p><strong>TPR</strong>（True Positive Rate）：(值为召回率)<br>$$<br>TPR = TP/(TP + FN)<br>$$<br>Focus将<strong>正例分正</strong>的概率。所有真实为1的样本中，预测为1的概率。</p>
+<p><strong>FPR</strong>（False Positive Rate）：（只针对实际为负的样本）<br>$$<br>FPR = FP/(TN+FP)<br>$$<br>Focus将<strong>负例分正</strong>的概率。所有真实为0的样本中，预测为1的概率。</p>
+<p>描绘分类器在TP和FP间的Trade-off。</p>
+<p><img src="/medias/ML_1_AUC.png" alt="Data_expression"></p>
+<p>这里简单说一句图如何构成，我们实际上是用(TPR, FPR)这样的一个点作为中间点P，<strong>连接原点O到P</strong>，<strong>P到(1,1)</strong>。而我们又希望TPR&gt;FPR。</p>
+<p>所以，<strong>极端情况</strong>，当TPR=1,FPR=0,围成正方形，所以AUC=1，为最佳分类器，更多情况下我们希望它是大于0.5的图形即可。</p>
+<p><strong>比较分类器优劣</strong>：我们可以认为，加入分类器C1的ROC曲线完全在分类器C2之上，有”包裹“感，那么C1可以认为是优于C2的。</p>
+<h4 id="AUC-Area-Under-Curve-："><a href="#AUC-Area-Under-Curve-：" class="headerlink" title="AUC(Area Under Curve)："></a>AUC(Area Under Curve)：</h4><p>ROC曲线下的面积。判定学习器好坏的指标。</p>
+<blockquote>
+<p>The AUC value is equivalent to the probability that a randomly chosen  positive example is ranked higher than a randomly chosen negative  example.</p>
+<p>—wiki</p>
+</blockquote>
+<p>随机抽取一个阳性样本和阴性样本，分类器<strong>正确判断阳性样本</strong>的值高于<strong>阴性样本</strong>的概率即为AUC。</p>
+<p>简单的说，AUC值越接近1，正确率越高。</p>
+<ul>
+<li><p>AUC = 1：完美分类器，不管设定什么阈值都能完美预测。理想情况，基本不存在。</p>
+</li>
+<li><p>0.5 &lt;AUC &lt; 1 ：优于随机猜测，有预测价值。</p>
+</li>
+<li><p>AUC = 0.5：随机预测，无预测价值。</p>
+</li>
+</ul>
+<p>AUC和ROC最大的<strong>意义</strong>，在于当测试集中<strong>正负样本比例变化</strong>时候，ROC保持不变，这样对<strong>类不平衡</strong>（dass imbalance）可以兼容。</p>
+<p><strong>举例</strong>：某种欺诈场景，99.9%都非欺诈，那么一致给Nega，能有99.9%的准确率，但显然这不正确，使用TPR和FPR以及对应的AUC值，可以得知AUC为0.5，是个没有预测价值的分类器。</p>
+<h4 id="本章摘要"><a href="#本章摘要" class="headerlink" title="本章摘要"></a>本章摘要</h4><p><img src="/medias/ML_1_Abstract.png" alt="Data_expression"></p>
 
             </div>
             <hr />
@@ -610,9 +649,9 @@ MainWindow<span class="token operator">::</span><span class="token operator">~</
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Qt_2》
+                    《ML_Learning_1》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2021/07/18/qt-2/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2021/08/31/ml-learning-1/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Hz
             </a> 采用
@@ -653,7 +692,7 @@ MainWindow<span class="token operator">::</span><span class="token operator">~</
         repo: 'ECNUACRush.github.io',
         owner: 'ECNUACRush',
         admin: "ECNUACRush",
-        id: '2021/07/18/qt-2/',
+        id: '2021/08/31/ml-learning-1/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -674,47 +713,48 @@ MainWindow<span class="token operator">::</span><span class="token operator">~</
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/07/20/qt-3/">
+                <a href="/2021/08/31/ml-learning-1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Qt_3">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="ML_Learning_1">
                         
-                        <span class="card-title">Qt_3</span>
+                        <span class="card-title">ML_Learning_1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Day3：划水
-主要实现一个同步图画框，并且要保证不能成独立的窗口，这一点就不能用普通的new Mainwindow，首先要加上两个属性 Qt::CustomizeWindowHint | Qt::FramelessWindowHint，内
+                            Something李航老师《统计学习方法》算是一本知识普及类的技术书籍、首版于10年前意味着其是具有很强前瞻性的，彼时深度学习尚未兴起，如今的各种网络都尚未提出。在这样的情况下，李航老师的书能和西瓜书一样深受追捧，想来必然是有原因的，读来更
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2021-07-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-08-31
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/实习/" class="post-category" target="_blank">
-                                    实习
+                            <a href="/categories/ML/" class="post-category" target="_blank">
+                                    ML
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/笔记/" target="_blank">
-                        <span class="chip bg-color">笔记</span>
+                    <a href="/tags/AI/" target="_blank">
+                        <span class="chip bg-color">AI</span>
                     </a>
                     
                 </div>
@@ -728,36 +768,31 @@ MainWindow<span class="token operator">::</span><span class="token operator">~</
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/17/qt-1/">
+                <a href="/2021/08/23/chess-writesome/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Qt_1">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Chess_WriteSome">
                         
-                        <span class="card-title">Qt_1</span>
+                        <span class="card-title">Chess_WriteSome</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            实习要用到qt，从0开始学习一下，手写复现部分代码做保存。
-// QT_MainWindow.cpp
-// 类似制作一个word菜单页面
-// 菜单栏最多只有一个
-# include "mainwindow.h"
-# include &lt
+                            今后要将以往的习惯延续下来，对于阅读/影视作一列Done-list，我个人惰性大，有时缺乏恒心，作TODO-list往往会变成UNDO-list。哪日有所感想时也要记得写一写，以史为鉴、站在他人的肩膀上并时而进行反思、自省，这一定不是坏习惯
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-07-17
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-08-23
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/实习/" class="post-category" target="_blank">
-                                    实习
+                            <a href="/categories/Chess/" class="post-category" target="_blank">
+                                    Chess
                                 </a>
                             
                             
@@ -767,8 +802,8 @@ MainWindow<span class="token operator">::</span><span class="token operator">~</
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/笔记/" target="_blank">
-                        <span class="chip bg-color">笔记</span>
+                    <a href="/tags/随笔/" target="_blank">
+                        <span class="chip bg-color">随笔</span>
                     </a>
                     
                 </div>
